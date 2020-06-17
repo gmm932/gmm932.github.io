@@ -41,7 +41,7 @@
 				<div class="wrap">
 					<img class="img_1 pt-page-moveFromTop" src="imgml/meimei01.png" />
 			    
-			        <h2>与相识的第<b id="d"></b>天<b id="h"></b>小时<b id="m"></b>分钟<b id="s"></b>秒</h2>
+			        <h2>与你相识的第<b id="d"></b>天<b id="h"></b>小时<b id="m"></b>分钟<b id="s"></b>秒</h2>
 	
 					<img class="img_2 pt-page-moveFromBottom" src="imgml/text_1.png" />
 					<img class="icon_up pt-page-moveIconUp" src="img/icon_up.png" />
@@ -157,14 +157,14 @@
 	        	timer();
 	        	setInterval(timer, 1000);
 				// 将以下代码添加到js入口函数内即可
-				document.addEventListener('touchstart', function() {
-				    document.getElementById('my_audio').play()
-				})
-
-				// 这里使用了微信自带的WeixinJSBridgeReady事件
-				// document.addEventListener('WeixinJSBridgeReady', function() {
-				//     document.getElementById('audios').play()
+				// document.addEventListener('touchstart', function() {
+				//     document.getElementById('my_audio').play()
 				// })
+
+				//这里使用了微信自带的WeixinJSBridgeReady事件
+				document.addEventListener('WeixinJSBridgeReady', function() {
+				    document.getElementById('audios').play()
+				})
     		</script>
     	<!-- 	<script src="js/printer.js"></script>
 		    <script>
