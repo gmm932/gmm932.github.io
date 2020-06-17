@@ -91,11 +91,11 @@ body{
 }
 
 .img_content{
-	height:auto;width:250px;
+	height:auto;width:200px;
 	position:absolute;
 	left:50%;
 	top:5%;
-	margin-left:-125px;
+	margin-left:-100px;
 }
 .img_content2{
 	height:auto;width:293px;
