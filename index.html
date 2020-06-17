@@ -156,17 +156,16 @@
 	        	}
 	        	timer();
 	        	setInterval(timer, 1000);
-	        	document.getElementById('my_audio').play()
-	        	RefreshMusicImg()
 				// 将以下代码添加到js入口函数内即可
 				// document.addEventListener('touchstart', function() {
 				//     document.getElementById('my_audio').play()
 				// })
 
 				//这里使用了微信自带的WeixinJSBridgeReady事件
-				// document.addEventListener('WeixinJSBridgeReady', function() {
-				//     document.getElementById('my_audio').play()
-				// })
+				document.addEventListener('WeixinJSBridgeReady', function() {
+				    document.getElementById('my_audio').play()
+				    RefreshMusicImg()
+				})
     		</script>
     	<!-- 	<script src="js/printer.js"></script>
 		    <script>
