@@ -123,28 +123,26 @@ body{
 }
 
 p{
-	width:350px;
+	width:320px;
 	position:absolute;
 	left:50%;
-	top:55%;
-	margin-left:-175px;
+	top:60%;
+	margin-left:-160px;
 	z-index:1;
-	font-size:1rem;
+	font-size:0.8rem;
 	color:#FFFFFF;
 	text-align:left;
 }
 
 gb{
-	width:400px;
+	width:320px;
 	position:absolute;
 	left:50%;
-	top:15%;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left:-200px;
+	top:8%;
+	margin-left:-160px;
 	z-index:1;
 	text-align:left;
-	font-size:1.2rem;
+	font-size:1rem;
 	font-family: "Courier New", Courier, monospace, Consolas, serif;
 	color: #eee;
 }

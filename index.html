@@ -39,7 +39,7 @@
         .timer b {
             color: #FFFFFF;
         }
-        #show-board {
+/*        #show-board {
             background-color: #333;
             color: #eee;
             padding: 10px;
@@ -50,7 +50,7 @@
 			font-size:1.5rem;
 			text-align:left;
 			font-family: "Courier New", Courier, monospace, Consolas, serif;
-        }
+        }*/
     </style>
 	</head>
 	<body>
@@ -156,7 +156,7 @@
 			<div id="gaobai" class="page page-14-1 hide">
 				<div class="wrap">
 					<img class="icon_up pt-page-moveIconUp" src="img/icon_up.png" />
-					<gb class="top-text pt-page-flipInLeft" id="show-board" ></gb>
+					<gb class="pt-page-flipInLeft" id="show-board" ></gb>
 				</div>
 			</div>
 			<!-- <div id="gaobai" class="page page-14-1 hide">
@@ -207,19 +207,26 @@
     		</script>
     		<script src="js/printer.js"></script>
 		    <script>
-		        var str = '亲爱的美梅童鞋\n';
-		        str += 'echo This is a demo of js-printer\n';
-		        str += 'echo You can browse more from zhiqing.ingo\n';
-		        str += 'echo Thanks!\n';
-		        str += 'exit\n';
-		        str += 'echo This is a demo of js-printer\n';
-		        str += 'echo You can browse more from zhiqing.ingo\n';
-		        str += 'echo Thanks!\n';
-		        str += 'exit\n';
-		        str += 'echo This is a demo of js-printer\n';
-		        str += 'echo You can browse more from zhiqing.ingo\n';
-		        str += 'echo Thanks!\n';
-		        str += 'exit\n';
+		        var str = '美美，生日快乐！\n';
+		        str += '今天是我们在一起给你过的第一个生日，以后的生日我都会陪你过。\n';
+		        str += '感谢你出现在我的生活里，让我体会到了幸福的滋味，在一起的这四十多天里，我每天都很期待见到你。\n';
+		        str += '喜欢看你捂着嘴呵呵的傻笑，\n';
+		        str += '喜欢闻你身上的味道，\n';
+		        str += '喜欢和你整日整夜的腻在一起，\n';
+		        str += '我会慢慢喜欢你身上的一切，因为你的陪伴，我对未来充满期待。\n';
+		        str += '你说你要找一个性格好，人品也好的人，虽然我不是多么的高尚，但是请你相信我会用心去守护你的！\n';
+		        str += '\n';
+		        str += '宝贝，自从知道你8岁就离开了父母和爷爷奶奶一起生活，我就很想给你一个家，因为我能体会那种从小没有父母在身边的那种孤独，某种情况我跟你很相似，你也曾黑夜里偷偷的流过眼泪吧！\n';
+		        str += '\n'
+		        str += '你嘴上说你过的很好，但其实并不好，\n';
+		        str += '要不你也不能总是期盼着世界末日，\n';
+		        str += '我希望我的出现能让你振作起来，\n';
+		        str += '让你对生活充满希望，\n';
+		        str += '让你觉得这世界，还有你值得珍惜的人。\n';
+		        str += '\n';
+		        str += '美美，以后的日子，我们手牵着手\n';
+		        str += '跨过山河,多大风浪都在一起。\n';
+		        //大宝贝生日快乐，今天是我们在一起给你过的第一个生日，以后的生日我都会陪你过。感谢你出现在我的生活里，让我体会到了幸福的滋味，在一起的这四十多天里，我每天都很期待见到你，喜欢和你腻在一起，喜欢看你捂着呵呵的傻笑，喜欢闻你身上的味道，慢慢喜欢你身上的一切。你说你要找一个性格好，人品好的人，虽然我不是多么的高尚，但是请你相信我会用心去守护你的！宝贝，自从知道你8岁就离开了父母和爷爷奶奶一起生活，我就很想给你一个家，因为我能体会那种从小没有父母在身边的那种孤独，某种情况我跟你很相似，你也曾黑夜里偷偷的流过眼泪吧，你嘴上说你过的很好，但其实并不好，要不你也不能总是期盼着世界末日，我希望我的出现能让你振作起来，对生活充满希望，我也会把我的温暖带给你，以后的日子，我们手牵着手，跨过山河,多大风浪都在一起。
 
 		        var ok = true;
 		        var inter = setInterval(function(){
