@@ -202,15 +202,15 @@
 		        str += 'echo Thanks!\n';
 		        str += 'exit\n';
 
-		        var ok = true;
-		        var inter = setInterval(function(){
-			        var isGaobai =  document.getElementById('gaobai').classList.contains('page-current')
-			        if (isGaobai == ok) {
-			        	Printer.init(str, {selector: 'show-board',lnStr: ''}).print();
-			        	ok = false;
-			        	clearInterval(inter);
-			        } 
-			    },1000)
+		     //    var ok = true;
+		     //    var inter = setInterval(function(){
+			    //     var isGaobai =  document.getElementById('gaobai').classList.contains('page-current')
+			    //     if (isGaobai == ok) {
+			    //     	Printer.init(str, {selector: 'show-board',lnStr: ''}).print();
+			    //     	ok = false;
+			    //     	clearInterval(inter);
+			    //     } 
+			    // },1000)
 				//document.getElementById('gaobai').addEventListener('webkitAnimationEnd',function(){alert('测试测试')});
 		        // document.getElementById('gaobai').addEventListener('show', function() {alert('测试测试')}, false);
 
