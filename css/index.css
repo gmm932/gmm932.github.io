@@ -129,10 +129,13 @@ gb{
 	width:400px;
 	position:absolute;
 	left:50%;
-	top:25%;
+	top:15%;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-left:-200px;
 	z-index:1;
 	text-align:left;
+	font-size:1.2rem;
 	font-family: "Courier New", Courier, monospace, Consolas, serif;
 	color: #eee;
 }
