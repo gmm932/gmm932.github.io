@@ -133,7 +133,7 @@
 					<p class="top-text pt-page-flipInLeft" id="text-1" >6月12日，第15次见面，今天我要回家了，你和刘姨包了韭菜馅的饺子给我吃，还给我买了山竹、樱桃、烧烤蘸料，沉甸甸的都是你对我的心意，谢谢你们，让我第一次在离家很远的地方感受到了家人般的温暖。</p>
 				</div>
 			</div>
-			<div class="page page-13-1 hide">
+			<div id="gaobai1"  class="page page-13-1 hide">
 				<div class="wrap">
 					<img class="img_content hide pt-page-flipInLeft" src="imgml/meimei02.png"/>
 					<img class="icon_up pt-page-moveIconUp" src="img/icon_up.png" />
@@ -173,6 +173,7 @@
 	            document.getElementById('h').innerHTML = h;
 	            document.getElementById('m').innerHTML = m;
 	            document.getElementById('s').innerHTML = s;
+
 	        	}
 	        	timer();
 	        	setInterval(timer, 1000);
@@ -194,19 +195,42 @@
 		        str += 'echo You can browse more from zhiqing.ingo\n';
 		        str += 'echo Thanks!\n';
 		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
+		        str += 'echo This is a demo of js-printer\n';
+		        str += 'echo You can browse more from zhiqing.ingo\n';
+		        str += 'echo Thanks!\n';
+		        str += 'exit\n';
 
-		        var status = true;
-				document.getElementById('gaobai').addEventListener('show'，function(){
-				    if(status){
-				        //元素显示并播放动画
-				        Printer.init(str, {
-		            selector: 'show-board',
-		            lnStr: ''
-		        }).print();
-				    }else{
-				        //元素隐藏并停止动画
-				    }
-				},false)
+		        var ok = true;
+		        var inter = setInterval(function(){
+			        var isGaobai =  document.getElementById('gaobai').classList.contains('page-current')
+			        if (isGaobai == ok) {
+			        	Printer.init(str, {selector: 'show-board',lnStr: ''}).print();
+			        	ok = false;
+			        	clearInterval(inter);
+			        } 
+			    },1000)
+				//document.getElementById('gaobai').addEventListener('webkitAnimationEnd',function(){alert('测试测试')});
+		        // document.getElementById('gaobai').addEventListener('show', function() {alert('测试测试')}, false);
 
 		        
 		    </script>
