@@ -139,6 +139,7 @@ gb{
 	position:absolute;
 	left:50%;
 	top:8%;
+	padding-bottom: 7%;
 	margin-left:-160px;
 	z-index:1;
 	text-align:left;

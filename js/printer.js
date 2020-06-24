@@ -60,7 +60,7 @@
 
 				curObj = document.getElementById(options.curId);
 				clearTimeout(flwCurTimer);
-				setInterval(chCur, options.curSpeed);
+				//setInterval(chCur, options.curSpeed);
 			}
 		}, options.speed * str.length)
 	}
